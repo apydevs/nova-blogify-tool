@@ -15,7 +15,7 @@ class StoreImage
 
         $file_extension = $image_file->getClientOriginalExtension();
 
-        $new_filename = str_random(8).'_'.time().''.str_random(32);
+        $new_filename = \Str::random(8).'_'.time().''.\Str_random(32);
 
         $filename = $new_filename.'.'.$file_extension;
 
