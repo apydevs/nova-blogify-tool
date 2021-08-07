@@ -60,7 +60,7 @@ trait Sluggable
      */
     protected static function generateUniqueSlug(string $fieldValue, int $oldId = null): string
     {
-        $slug = str_slug($fieldValue);
+       $slug = \Str::slug($fieldValue, '-');
 
         $additionalQuery = static::getAdditionalQueryString($oldId);
 
