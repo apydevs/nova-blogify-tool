@@ -1,5 +1,5 @@
 {
-    "name": "mattmangoni/nova-blogify-tool",
+    "name": "apydevs/nova-blogify-tool",
     "description": "Create a simple blogging system inside Laravel Nova in one click",
     "keywords": [
         "laravel",
