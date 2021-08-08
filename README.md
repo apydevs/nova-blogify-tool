@@ -24,6 +24,8 @@ You can install the package in to a Laravel app that uses [Nova](https://nova.la
 
 ```bash
 composer require mattmangoni/nova-blogify-tool
+New
+composer require apydevs/nova-blogify-tool
 ```
 
 Next, you must register the card with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
