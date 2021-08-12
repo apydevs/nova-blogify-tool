@@ -13,6 +13,7 @@ use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
+use Froala\NovaFroalaField\Froala;
 use Laravel\Nova\Fields\BelongsToMany;
 use Mattmangoni\NovaBlogifyTool\Models\Image;
 use Mattmangoni\NovaBlogifyTool\Fields\ImageUpload;
@@ -79,9 +80,9 @@ class Post extends Resource
                 ->sortable()
                 ->rules(['required']),
 
-            Textarea::make('Summary')->hideFromIndex(),
+            Froala::make('Summary')->hideFromIndex(),
 
-            Markdown::make('Body')->rules(['required', 'string']),
+            Froala::make('Body')->rules(['required', 'string']),
 
             Boolean::make('Featured')->sortable(),
 
